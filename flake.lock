@@ -1,5 +1,21 @@
 {
   "nodes": {
+    "anemone-theme": {
+      "flake": false,
+      "locked": {
+        "lastModified": 1709348991,
+        "narHash": "sha256-Et4t78LOwR+LnuS3qhe/dPTxqqinqC3xltTyQ+vlLB0=",
+        "owner": "Speyll",
+        "repo": "anemone",
+        "rev": "6c76523b856674f4854118b1f4bc62248f7ceccd",
+        "type": "github"
+      },
+      "original": {
+        "owner": "Speyll",
+        "repo": "anemone",
+        "type": "github"
+      }
+    },
     "flake-utils": {
       "inputs": {
         "systems": "systems"
@@ -36,9 +52,9 @@
     },
     "root": {
       "inputs": {
+        "anemone-theme": "anemone-theme",
         "flake-utils": "flake-utils",
-        "nixpkgs": "nixpkgs",
-        "terminimal-theme": "terminimal-theme"
+        "nixpkgs": "nixpkgs"
       }
     },
     "systems": {
@@ -53,22 +69,6 @@
       "original": {
         "owner": "nix-systems",
         "repo": "default",
-        "type": "github"
-      }
-    },
-    "terminimal-theme": {
-      "flake": false,
-      "locked": {
-        "lastModified": 1707855063,
-        "narHash": "sha256-XJh9R8PyerMtM5Vc7xUzhPf9gZJZkW7g2tRPZ17XMHI=",
-        "owner": "pawroman",
-        "repo": "zola-theme-terminimal",
-        "rev": "0ced77898f37eb388181c4bdfa564febe437841e",
-        "type": "github"
-      },
-      "original": {
-        "owner": "pawroman",
-        "repo": "zola-theme-terminimal",
         "type": "github"
       }
     }

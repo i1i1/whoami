@@ -1,24 +1,17 @@
-# The URL the site will be built for
 base_url = "https://i1i1.github.io/whoami"
-
-# Whether to automatically compile all Sass files in the sass directory
-compile_sass = true
-
-theme = "terminimal"
-
-# Whether to build a search index to be used later on by a JavaScript library
-build_search_index = true
+compile_sass = false
+theme = "anemone"
+build_search_index = false
 
 [markdown]
-# Whether to do syntax highlighting
-# Theme can be customised by setting the `highlight_theme` variable to a theme supported by Zola
 highlight_code = true
+smart_punctuation = true
 
 [extra]
-logo_text = "Who is i1i1?"
 author = "i1i1"
-
-menu_items = [
-    { name = "/", url = "$BASE_URL" },
-    { name = "github", url = "https://github.com/i1i1", newtab = true },
+header_nav = [
+  { name_en = "/home/", url = "$BASE_URL" },
+  { name_en = "/github/", url = "https://github.com/i1i1" },
+  { name_en = "/email/", url = "mailto:vanyarybin1@live.ru" },
+  { name_en = "/telegram/", url = "https://t.me/i1i1r" },
 ]

@@ -1,98 +1,41 @@
 +++
-title = "Welcome to Terminimal Theme for Zola"
-date = 2019-02-04
+title = "Ivan Rybin"
+date = 2024-05-09
 +++
 
-Welcome to Terminimal! This is a theme showcase post.
+## Senior Rust developer
 
-Code block (using "boron" theme):
+Hey, I am a software engineer with three years of experience in low-level and
+blockchain development and distributed systems. in computer science, I
+am interested in formal methods and verification.
 
-```python
-#!/usr/bin/python3
+Here is a list of tags relevant to me:
 
-class HelloPrinter:
-    def __init__(self, thing):
-        self.thing = thing
-
-    def __call__(self):
-        print(f"Hello, {self.thing}!")
+<center> `Rust` `Substrate` `Blockchain` `DevOps` `C` `Nix` `NixOS` `Linux` `Emacs` `CI` `CD` </center>
 
 
-printer = HelloPrinter("World")
-printer()
+## Experience
 
-# prints: Hello, World!
-```
+### [Lumio](https://lumio.io/) @ [pontem.network](pontem.network)
 
-Inline code: `print("Hello world!")`.
+*02/2024 - now*
 
-Basic typography:
+I am Senior Rust developer at Pontem working on Lumio network. I was working on Optimistic rollup on Ethereum which supported Move VM and EVM.
 
-*Italic text*.  **Bold text**. _**Italic bold**_. Link: [click me](#)
+### [Subspace](https://subspace.network)
 
-# Header 1
-## Header 2
-### Header 3
-#### Header 4
+*01/2022 - 07/2023*
 
-Quote:
+Protocol engineer
 
-> "Theory is when you know everything but nothing works.
-Practice is when everything works but no one knows why.
-In our lab, theory and practice are combined: nothing works and no one knows why."
+x was working on subspace farmer. That involvedz
+w xmplementation of subspace farmer protocoÅ
+w Various profiling and optimizations of implementation, database, and
+architecture
+x’ve been working with different parts of substrate stackz
+w Heavily optimized substrate telemetrx
+w Contributed to parit« db
+Also, x implemented subspace-sdk from ground up, which wrapped
+subspace substrate node and subspace farmer in rust library.
 
-Lists:
-
-- A
-- B
-- CDEF
-  - Nested Item
-    - And more nesting
-  - GHIJ
-
-
-1. One
-2. Two
-3. Three
-
-Horizontal line:
-
----
-
-This is where the post summary ends.
-
-<!-- more -->
-
-The second part follows here.
-
-## Shortcodes
-
-`figure` shortcode:
-
-```
-figure(src="http://rustacean.net/assets/rustacean-flat-gesture.png",
-       style="width: 25%;",
-       position="center",
-       caption_position="left",
-       caption="**Ferris**, the (unofficial) Rust mascot",
-       caption_style="font-weight: bold; font-style: italic;")
-```
-
-{{ figure(src="http://rustacean.net/assets/rustacean-flat-gesture.png",
-          style="width: 25%;",
-          position="center",
-          caption_position="left",
-          caption="**Ferris**, the (unofficial) Rust mascot",
-          caption_style="font-style: italic;") }}
-
----
-
-`image` shortcode:
-
-```
-image(src="https://upload.wikimedia.org/wikipedia/commons/3/35/Tux.svg",
-      position="left")
-```
-
-{{ image(src="https://upload.wikimedia.org/wikipedia/commons/3/35/Tux.svg",
-         position="left") }}
+My work history before 2017 is available upon request.
