@@ -3,19 +3,16 @@ title = "Ivan Rybin"
 date = 2024-05-09
 +++
 
-## Senior Rust developer
+## Ivan Rybin
 
-Hey, I am a software engineer with five years of experience in blockchain and
-backend development. My main interests in computer sciences are functional programming,
-formal methods and verification. Also I am keen on low level system development
-like OS/kernel development.
+Hello! I’m a software engineer with a solid five-year background in blockchain and backend development.
+I’m deeply interested in functional programming, formal methods, and verification, and I have a soft
+spot for low-level system development like OS/kernel development.
 
-I have some interest in Philosophy. I have many hobbies including smart-home, sports,
-3d-printing and cooking (sometimes).
+Beyond my technical pursuits, I enjoy exploring philosophy and engaging in hobbies like smart-home
+projects, sports, 3D printing, and occasionally cooking.
 
 Here is a list of tags relevant to me:
-
-<!-- TODO: make propper html tags -->
 
 `Rust` `Substrate` `Ethereum` `Blockchain` `DevOps` `CI` `CD` `Nix` `NixOS` `Python` `Linux` `C` `Emacs`
 
@@ -23,65 +20,65 @@ ______________________________________________________________________
 
 ## Experience
 
-### [Lumio](https://lumio.io/) @ [pontem.network](pontem.network) -- Senior Rust developer
+### [Lumio](https://lumio.io/) @ [pontem.network](pontem.network) -- Senior Rust Developer
 
-*02/2024 - now*
+*02/2024 - Present*
 
-At Lumio, I was working on Optimistic rollup on Ethereum which supported both Move VM and EVM.
-My main responsibility is developing rollup node which is fork of [a16z's Magi][magi] rollup
-node.
+At Lumio, I’m currently working on an Optimistic Rollup on Ethereum that supports both
+Move VM and EVM. My main role is to develop a rollup node, which started as a fork of
+[a16z's Magi][magi] rollup node.
 
-I was working on various deployments and CI/CD of the whole project using Nix and NixOs.
-It involved hosting our [attic] cache server
+I also handle various deployments and CI/CD processes for the project using Nix and
+NixOS, including setting up our [attic] cache server.
 
 ### [Subspace](https://subspace.network) -- Protocol Engineer
 
 *01/2022 - 07/2023*
 
-I was working on subspace farmer (which is like a miner, but for Proof of Storage blockchains). That involved:
+At Subspace, I was part of the team developing the Subspace farmer, a component similar
+to a miner but for Proof of Storage blockchains. My work involved:
 
-- Implementation of subspace farmer protocol
-- Various profiling and optimizations of implementation, database, and architecture
+- Implementing the Subspace farmer protocol.
+- Profiling and optimizing the performance of the implementation, database, and architecture.
 
-Also I've been working with different parts of substrate stack:
+I also worked on different parts of the Substrate stack:
 
-- Heavily optimized substrate telemetry (we hit the scaling limit of it, as we had up to 30k nodes on the testnet)
-- Contributed to [parity db](https://github.com/paritytech/parity-db)
+- Optimizing [Substrate telemetry](https://github.com/subspace/substrate-telemetry/) to handle up to 30k nodes on the testnet.
+- Contributing to [parity db](https://github.com/paritytech/parity-db).
 
-Also, I implemented [subspace-sdk](https://github.com/subspace/subspace-pulsar-sdk) from ground up, which wrapped
-subspace substrate node and subspace farmer in rust library.
+Additionally, I developed the [subspace-sdk](https://github.com/subspace/subspace-pulsar-sdk) from the ground up, integrating the Subspace substrate node and farmer into a Rust library.
 
-### [Soramitsu](https://soramitsu.co.jp) -- Rust developer
+### [Soramitsu](https://soramitsu.co.jp) -- Rust Developer
 
 *02/2021 - 10/2021*
 
-At Soramitsu, I was working on [Hyperledger Iroha 2](https://hyperledger.github.io/iroha-2-docs/) blockchain. It involved:
+At Soramitsu, my focus was on developing the [Hyperledger Iroha 2](iroha2) blockchain. My responsibilities included:
 
-- Writing iroha peer
-- Creating python client library
-- DevOps-ing, by writing CI/CD pipelines
-- Researching related blockchains and their implementations
+- Working on all the parts of the blockchain node starting from consensus and smart contract VM ending with networing
+- Creating a Python client library
+- Managing DevOps, including crafting CI/CD pipelines.
+- Researching various blockchain technologies and their implementations.
 
 ### [Intropy](https://intropy-tech.ru) -- Middle/Senior Developer
 
 *11/2019 - 02/2021*
 
-I was working on project called SmartScales, which involved making food recognition in grocery stores on microcontrollers.
+I worked on the SmartScales project, aimed at automating food recognition in grocery
+stores using microcontrollers. My role included:
 
-That involved:
+- Transitioning Python microservices to a Rust-based monolith using actix-web.
+- Developing recognition libraries and their Rust bindings.
+- Handling MLOps, including model optimization and deployment.
+- Implementing CI/CD and observability practices.
 
-- Rewriting python microservices to Rust monolith using actix-web
-- Writing recognition libraries and their bindings for Rust
-- Doing MlOps (optimizing and deploying models)
-- CI/CD and implementing some of the observability practices
-
-My previous work history before is available upon request.
+My earlier work history is available upon request.
 
 ______________________________________________________________________
 
 ### Education
 
-*09/2018 - 03/2022* -- unfinished Bachelors in CS at [Innopolis University](https://innopolis.university/).
+*09/2018 - 03/2022* -- Unfinished Bachelor’s in Computer Science at [Innopolis University](https://innopolis.university/).
 
 [attic]: https://github.com/zhaofengli/attic
 [magi]: https://github.com/a16z/magi
+[iroha2]: https://hyperledger.github.io/iroha-2-docs/
