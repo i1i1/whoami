@@ -16,10 +16,10 @@ I have some interest in Philosophy. I have many hobbies including smart-home, sp
 Here is a list of tags relevant to me:
 
 <!-- TODO: make propper html tags -->
+
 `Rust` `Substrate` `Ethereum` `Blockchain` `DevOps` `CI` `CD` `Nix` `NixOS` `Python` `Linux` `C` `Emacs`
 
-
----
+______________________________________________________________________
 
 ## Experience
 
@@ -32,17 +32,19 @@ My main responsibility is developing rollup node which is fork of [a16z's Magi][
 node.
 
 I was working on various deployments and CI/CD of the whole project using Nix and NixOs.
-It involved hosting our [attic][attic] cache server
+It involved hosting our [attic] cache server
 
 ### [Subspace](https://subspace.network) -- Protocol Engineer
 
 *01/2022 - 07/2023*
 
 I was working on subspace farmer (which is like a miner, but for Proof of Storage blockchains). That involved:
+
 - Implementation of subspace farmer protocol
 - Various profiling and optimizations of implementation, database, and architecture
 
 Also I've been working with different parts of substrate stack:
+
 - Heavily optimized substrate telemetry (we hit the scaling limit of it, as we had up to 30k nodes on the testnet)
 - Contributed to [parity db](https://github.com/paritytech/parity-db)
 
@@ -54,6 +56,7 @@ subspace substrate node and subspace farmer in rust library.
 *02/2021 - 10/2021*
 
 At Soramitsu, I was working on [Hyperledger Iroha 2](https://hyperledger.github.io/iroha-2-docs/) blockchain. It involved:
+
 - Writing iroha peer
 - Creating python client library
 - DevOps-ing, by writing CI/CD pipelines
@@ -66,18 +69,19 @@ At Soramitsu, I was working on [Hyperledger Iroha 2](https://hyperledger.github.
 I was working on project called SmartScales, which involved making food recognition in grocery stores on microcontrollers.
 
 That involved:
-* Rewriting python microservices to Rust monolith using actix-web
-* Writing recognition libraries and their bindings for Rust
-* Doing MlOps (optimizing and deploying models)
-* CI/CD and implementing some of the observability practices
+
+- Rewriting python microservices to Rust monolith using actix-web
+- Writing recognition libraries and their bindings for Rust
+- Doing MlOps (optimizing and deploying models)
+- CI/CD and implementing some of the observability practices
 
 My previous work history before is available upon request.
 
----
+______________________________________________________________________
 
 ### Education
 
 *09/2018 - 03/2022* -- unfinished Bachelors in CS at [Innopolis University](https://innopolis.university/).
 
-[magi]: https://github.com/a16z/magi
 [attic]: https://github.com/zhaofengli/attic
+[magi]: https://github.com/a16z/magi

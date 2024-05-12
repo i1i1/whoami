@@ -10,12 +10,17 @@
       url = "github:Speyll/anemone";
       flake = false;
     };
+
+    treefmt-nix = {
+      url = "github:numtide/treefmt-nix";
+      inputs.nixpkgs.follows = "nixpkgs";
+    };
   };
 
   outputs = inputs@{ flake-parts, ... }:
     let
       theme = inputs.anemone-theme;
-      themeName = ((builtins.fromTOML (builtins.readFile "${theme}/theme.toml")).name);
+      themeName = (builtins.fromTOML (builtins.readFile "${theme}/theme.toml")).name;
       date = "2024-05-09";
     in
     flake-parts.lib.mkFlake { inherit inputs; } {
@@ -26,7 +31,11 @@
         "aarch64-darwin"
       ];
 
-      perSystem = ({ self', pkgs, ... }: {
+      imports = [
+        inputs.treefmt-nix.flakeModule
+      ];
+
+      perSystem = { self', pkgs, ... }: {
         packages = {
           website = pkgs.stdenv.mkDerivation rec {
             pname = "static-website";
@@ -64,6 +73,22 @@
             ln -sn "${theme}" "themes/${themeName}"
           '';
         };
-      });
+
+        treefmt.config = {
+          projectRootFile = "flake.nix";
+          flakeFormatter = true;
+          flakeCheck = true;
+          programs = {
+            deadnix.enable = true;
+            nixpkgs-fmt.enable = true;
+            statix.enable = true;
+
+            mdformat.enable = true;
+
+            # TODO: enable once https://github.com/numtide/treefmt-nix/pull/146 merged
+            # actionlint.enable = true;
+          };
+        };
+      };
     };
 }
