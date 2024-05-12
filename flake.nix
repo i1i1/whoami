@@ -1,7 +1,10 @@
 {
   inputs = {
     nixpkgs.url = "github:nixos/nixpkgs/nixos-23.11";
-    flake-utils.url = "github:numtide/flake-utils";
+    flake-parts = {
+      url = "github:hercules-ci/flake-parts";
+      inputs.nixpkgs-lib.follows = "nixpkgs";
+    };
 
     anemone-theme = {
       url = "github:Speyll/anemone";
@@ -9,16 +12,22 @@
     };
   };
 
-  outputs = { self, nixpkgs, flake-utils, anemone-theme }:
-    flake-utils.lib.eachDefaultSystem (system:
-      let
-        pkgs = nixpkgs.legacyPackages.${system};
-        theme = anemone-theme;
-        themeName = ((builtins.fromTOML (builtins.readFile "${theme}/theme.toml")).name);
-        date = "2024-05-09";
-      in
-      {
-        packages = rec {
+  outputs = inputs@{ flake-parts, ... }:
+    let
+      theme = inputs.anemone-theme;
+      themeName = ((builtins.fromTOML (builtins.readFile "${theme}/theme.toml")).name);
+      date = "2024-05-09";
+    in
+    flake-parts.lib.mkFlake { inherit inputs; } {
+      systems = [
+        "x86_64-linux"
+        "aarch64-linux"
+        "x86_64-darwin"
+        "aarch64-darwin"
+      ];
+
+      perSystem = ({ self', pkgs, ... }: {
+        packages = {
           website = pkgs.stdenv.mkDerivation rec {
             pname = "static-website";
             version = date;
@@ -38,13 +47,13 @@
             src = ./.;
             nativeBuildInputs = with pkgs; [ python3Packages.weasyprint ];
             dontUnpack = true;
-            buildPhase = "weasyprint ${website}/cv/index.html cv.pdf";
+            buildPhase = "weasyprint ${self'.packages.website}/index.html cv.pdf";
             installPhase = "mkdir $out; cp cv.pdf $out";
           };
-          defaultPackage = website;
+          defaultPackage = self'.packages.website;
         };
 
-        devShell = pkgs.mkShell {
+        devShells.default = pkgs.mkShell {
           packages = with pkgs; [
             zola
             python3Packages.weasyprint
@@ -55,6 +64,6 @@
             ln -sn "${theme}" "themes/${themeName}"
           '';
         };
-      }
-    );
+      });
+    };
 }
