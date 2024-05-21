@@ -24,9 +24,11 @@ ______________________________________________________________________
 
 *02/2024 - Present*
 
-At Lumio, I’m currently working on an Optimistic Rollup on Ethereum that supports both
-Move VM and EVM. My main role is to develop a rollup node, which started as a fork of
+At Lumio, We initially were working on an Optimistic Rollup on Ethereum that supports both
+Move VM and EVM. My main role was to develop a rollup node, which started as a fork of
 [a16z's Magi][magi] rollup node.
+
+Right now our project is to build Optimistic Rollup on Solana which supports both EBPF and Move VMs.
 
 I also handle various deployments and CI/CD processes for the project using Nix and
 NixOS, including setting up our [attic] cache server.
