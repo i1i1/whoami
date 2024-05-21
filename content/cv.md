@@ -54,7 +54,7 @@ Additionally, I developed the [subspace-sdk](https://github.com/subspace/subspac
 
 *02/2021 - 10/2021*
 
-At Soramitsu, my focus was on developing the [Hyperledger Iroha 2](iroha2) blockchain. My responsibilities included:
+At Soramitsu, my focus was on developing the [Hyperledger Iroha 2][iroha2] blockchain. My responsibilities included:
 
 - Working on all the parts of the blockchain node starting from consensus and smart contract VM ending with networing
 - Creating a Python client library
@@ -82,5 +82,5 @@ ______________________________________________________________________
 *09/2018 - 03/2022* -- Unfinished Bachelor’s in Computer Science at [Innopolis University](https://innopolis.university/).
 
 [attic]: https://github.com/zhaofengli/attic
-[magi]: https://github.com/a16z/magi
 [iroha2]: https://hyperledger.github.io/iroha-2-docs/
+[magi]: https://github.com/a16z/magi

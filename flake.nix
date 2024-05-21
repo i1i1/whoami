@@ -65,12 +65,23 @@
         devShells.default = pkgs.mkShell {
           packages = with pkgs; [
             zola
+            nodePackages.cspell
             python3Packages.weasyprint
           ];
           shellHook = ''
             # TODO: `cd` into git root
             mkdir -p themes
             ln -sn "${theme}" "themes/${themeName}"
+          '';
+        };
+
+        checks.cspell = pkgs.stdenv.mkDerivation {
+          name = "cspell-check";
+          src = ./.;
+          nativeBuildInputs = [ pkgs.nodePackages.cspell ];
+          installPhase = ''
+            cspell **.md
+            touch $out
           '';
         };
 

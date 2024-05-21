@@ -24,6 +24,7 @@ jobs:
       - uses: cachix/install-nix-action@v23
       - uses: actions/checkout@v4
       - uses: actions/configure-pages@v5
+      - run: nix flake check -L
       - run: nix build -L .#website
 
       - name: Upload artifact
