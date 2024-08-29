@@ -20,7 +20,7 @@ ______________________________________________________________________
 
 ## Experience
 
-### [Lumio](https://lumio.io/) @ [pontem.network](pontem.network) -- Senior Rust Developer
+### [Lumio](https://lumio.io/) @ [pontem.network](http://pontem.network) -- Senior Rust Developer
 
 *02/2024 - Present*
 
@@ -33,7 +33,7 @@ Right now our project is to build Optimistic Rollup on Solana which supports bot
 I also handle various deployments and CI/CD processes for the project using Nix and
 NixOS, including setting up our [attic] cache server.
 
-### [Subspace](https://subspace.network) -- Protocol Engineer
+### [Autonomous (ex Subspace)](https://www.autonomys.xyz) -- Protocol Engineer
 
 *01/2022 - 07/2023*
 

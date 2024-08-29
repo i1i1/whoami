@@ -21,7 +21,7 @@
     let
       theme = inputs.anemone-theme;
       themeName = (builtins.fromTOML (builtins.readFile "${theme}/theme.toml")).name;
-      date = "2024-05-09";
+      date = "2024-08-29";
     in
     flake-parts.lib.mkFlake { inherit inputs; } {
       systems = [
