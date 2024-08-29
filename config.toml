@@ -12,6 +12,5 @@ author = "i1i1"
 header_nav = [
   { name_en = "/github/", url = "https://github.com/i1i1" },
   { name_en = "/email/", url = "mailto:vanyarybin1@live.ru" },
-  { name_en = "/telegram/", url = "https://t.me/i1i1r" },
 ]
 favicon = "/my-fancy-favicon.ico"
