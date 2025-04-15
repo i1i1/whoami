@@ -14,15 +14,29 @@ projects, sports, 3D printing, and occasionally cooking.
 
 Here is a list of tags relevant to me:
 
-`Rust` `Substrate` `Ethereum` `Blockchain` `DevOps` `CI` `CD` `Nix` `NixOS` `Python` `Linux` `C` `Emacs`
+`Rust` `Reth` `Substrate` `Ethereum` `Blockchain` `DevOps` `CI` `CD` `Nix` `NixOS` `Python` `Linux` `C` `Emacs`
 
 ______________________________________________________________________
 
 ## Experience
 
+### [Rise Labs](https://www.riselabs.xyz/) -- Senior Rust Developer
+
+*10/2024 - 04/2025*
+
+At Rise, I was part of the team developing Based Gigagas Ethereum L2 with Parallel EVM and preconfirmations. I was working on various parts of
+the node stack:
+
+- Benchmarking and optimizing Rise Reth node
+- Enabling eip-7702 on Reth node
+- Implementing various optimizations to OP stack ([1](https://github.com/ethereum-optimism/optimism/pull/13139))
+- Implementing [Golang library for Luban's preconf gateway](https://github.com/risechain/luban-api)
+- Integrating preconfs with Luban into OP stack
+- Various improvements into [PEVM](https://github.com/risechain/pevm)
+
 ### [Lumio](https://lumio.io/) @ [pontem.network](http://pontem.network) -- Senior Rust Developer
 
-*02/2024 - Present*
+*02/2024 - 09/2024*
 
 At Lumio, We initially were working on an Optimistic Rollup on Ethereum that supports both
 Move VM and EVM. My main role was to develop a rollup node, which started as a fork of
