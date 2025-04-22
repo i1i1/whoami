@@ -32,6 +32,7 @@ the node stack:
 - Implementing various optimizations to OP stack ([1](https://github.com/ethereum-optimism/optimism/pull/13139))
 - Implementing [Golang library for Luban's preconf gateway](https://github.com/risechain/luban-api)
 - Integrating preconfs with Luban into OP stack
+- Integrating Celestia into Rise OP stack fork
 - Various improvements into [PEVM](https://github.com/risechain/pevm)
 
 ### [Lumio](https://lumio.io/) @ [pontem.network](http://pontem.network) -- Senior Rust Developer
